@@ -7,7 +7,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>
- 	Hello Mars
-	</h1>
+	
+ 	{{range .}}
+ 	<h1>{{.First_name}} {{.Last_name}}</h1>
+ 	<h3>{{.Saying}}</h3>
+ 	{{end}}
+	
 </body>

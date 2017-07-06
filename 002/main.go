@@ -16,5 +16,6 @@ func main() {
 }
 
 func index (w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "index.gohtml", nil )
+	n := "Al Pacino"
+	tpl.ExecuteTemplate(w, "index.gohtml", n )
 }
