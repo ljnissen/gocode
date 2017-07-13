@@ -1,11 +1,20 @@
 package main
 
-import (
-	"log"
+type Engine interface {
+	Start()
+	Stop()
+}
 
-	"golang.org/x/mobile/app"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
+type Car struct {
+	Engine
+}
+
+func (c *Car) GoToWorkIn (
+	// get in car
+	c.Start
+	// drive to work
+	c.Stop
+	// get out of car
 )
 
 func main() {

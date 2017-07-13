@@ -1,23 +1,16 @@
 package main
 
 import (
-	"log"
-
-	"golang.org/x/mobile/app"
-	"golang.org/x/mobile/event/lifecycle"
-	"golang.org/x/mobile/event/paint"
+	"fmt"
 )
 
+
 func main() {
-	app.Main(func(a app.App) {
-		for e := range a.Events() {
-			switch e := a.Filter(e).(type) {
-			case lifecycle.Event:
-				// ...
-			case paint.Event:
-				log.Print("Call OpenGL here.")
-				a.Publish()
-			}
-		}
-	})
+	x := 42
+	y := "James Bond"
+	z := true
+	fmt.Println(x, y, z)
+	fmt.Println(x)
+	fmt.Println(y)
+	fmt.Println(z)
 }
